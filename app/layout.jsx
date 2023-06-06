@@ -27,10 +27,10 @@ import lkdn_wh from "@public/static/assets/icons/linkedin_white.svg"
 import github_wh from "@public/static/assets/icons/github_white.svg"
 
 
-export const metadata = {
-  title: 'Christian',
-  description: 'Hi, I\'m Christian',
-}
+// export const metadata = {
+//   title: 'Christian',
+//   description: 'Hi, I\'m Christian',
+// }
 
 // const links = JSON.parse(links)
 
@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
   const [menu,setMenu] = useState("menu")
 
   const nav = [
-      {name : "About", path : "/about"},
+      {name : "About", path : "/"},
       {name : "Tech Skills", path : "/tech"},
       {name : "Other Skills", path : "/other"},
       {name : "Hobbies", path : "/hobbies"}
@@ -107,7 +107,7 @@ export default function RootLayout({ children }) {
                                         <Link key = {uuidv4()} 
                                         className= {
                                             (item.path === path) ?
-                                                "px-5 py-2 my-2 theme_col white text_semibold rounded-l-full"
+                                                "px-5 py-2 my-2 theme_col white text_semi rounded-l-full"
                                             :
                                                 "px-5 py-2 my-2 white_col black text rounded-l-full hover:bg-gray-400"
                                         }
@@ -149,7 +149,7 @@ export default function RootLayout({ children }) {
                                         }} 
                                         className= {
                                             (item.path === path) ?
-                                                "px-5 py-2 my-2 white_col black text_semibold text-center rounded-tl-full rounded-br-full"
+                                                "px-5 py-2 my-2 white_col black text_semi text-center rounded-tl-full rounded-br-full"
                                             :
                                                 "px-5 py-2 my-2 white text text-center rounded-tl-full rounded-br-full hover:bg-gray-400"
                                             
