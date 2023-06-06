@@ -81,7 +81,7 @@ export default function RootLayout({ children }) {
                         <button onClick={()=>{
                             Show_or_hide();
                         }}>
-                            <Image width = {32} height = {32} src = {menu_icon} className={iconstyle + menu + " animenu"} alt = "menu icon" />
+                            <Image style={{width: 'auto' , height: 'auto'}} width = {32} height = {32} src = {menu_icon} className={iconstyle + menu + " animenu"} alt = "menu icon" />
                         </button>
                     </div>
                     {/* TABLET/DESKTOP */}

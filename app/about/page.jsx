@@ -3,8 +3,9 @@ import React, { useEffect } from 'react'
 import Aos from 'aos';
 import '@node_modules/aos/dist/aos.css'; // You can also use <link> for styles
 // ..
-import { LazyLoadImage } from "react-lazy-load-image-component"
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import Image from 'next/image'
+// import { LazyLoadImage } from "react-lazy-load-image-component"
+// import 'react-lazy-load-image-component/src/effects/blur.css';
 
 // IMPORT LINKS
 import links from "../../links.json"
@@ -54,7 +55,7 @@ const about = () => {
     <div className="overflow-hidden w-full h-full flex flex-col md:flex-row pr-3 pl-3 pb-3 lg:p-5">
             {/* CHRISTIAN PICTURE */}
             <div className="w-full chrispic h-1/2 md:h-auto overflow-hidden rounded-xl flex justify-center items-center md:items-flex lg:w-1/2 xl:rounded-3xl">
-                <LazyLoadImage src = {christian} className="mx-auto rounded-xl xl:rounded-3xl" placeholderSrc = {christian} effect= "blur" alt = "christian"/>
+                <Image src = {christian} style={{ width: 'auto', height: 'auto' }} className="mx-auto rounded-xl xl:rounded-3xl" alt = "christian"/>
             </div>
             {/* MAIN INFORMATION */}
             <div className="card_col mt-3 w-full min-h-1/2 md:h-auto flex justify-start items-center rounded-xl md:mt-0 lg:w-1/2 md:ml-[20px] xl:rounded-3xl">
@@ -67,13 +68,13 @@ const about = () => {
                     {/* TECH SKILLS */}
                     <div className="flex flex-row flex-wrap items-center my-1 lg:my-4">
                         <h3 data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="50" data-aos-once= {aos_once} className={skillstyle}>ui/ux designer</h3>
-                        <img data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="100" data-aos-once= {aos_once} className  = {iconstyle} src={dot} alt = "dot"/>
+                        <Image style={{ width: 'auto', height: 'auto' }} data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="100" data-aos-once= {aos_once} className  = {iconstyle} src={dot} alt = "dot"/>
                         <h3 data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="150" data-aos-once= {aos_once} className={skillstyle}>graphics designer</h3>
-                        <img data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="200" data-aos-once= {aos_once} className  = {iconstyle} src={dot} alt = "dot"/>
+                        <Image style={{ width: 'auto', height: 'auto' }} data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="200" data-aos-once= {aos_once} className  = {iconstyle} src={dot} alt = "dot"/>
                         <h3 data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="250" data-aos-once= {aos_once} className={skillstyle}>3d animator</h3>
-                        <img data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="300" data-aos-once= {aos_once} className  = {iconstyle} src={dot} alt = "dot"/>
+                        <Image style={{ width: 'auto', height: 'auto' }} data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="300" data-aos-once= {aos_once} className  = {iconstyle} src={dot} alt = "dot"/>
                         <h3 data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="350" data-aos-once= {aos_once} className={skillstyle}>frontend software engineer</h3>
-                        <img data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="400" data-aos-once= {aos_once} className  = {iconstyle} src={dot} alt = "dot"/>
+                        <Image style={{ width: 'auto', height: 'auto' }} data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="400" data-aos-once= {aos_once} className  = {iconstyle + " hidden sm:inline-block"} src={dot} alt = "dot"/>
                     </div>
                     {/* OBJECTIVE */}
                     <h3 data-aos="fade-up" data-aos-duration={aos_dur} data-aos-delay="450" data-aos-once= {aos_once} className="white text_italic mx-3 my-4">
@@ -82,7 +83,7 @@ const about = () => {
                     {/* GET IN TOUCH BUTTON */}
                     <a href = {links.cv} target="_blank" rel="noreferrer" data-aos="fade-left" data-aos-duration={aos_dur} data-aos-offset= "50" data-aos-once= "true" data-aos-delay="700" className = "white_col flex flex-row items-center rounded-md mx-3 my-2 lg:my-4 px-3 py-2">
                         {/* MAIN ICON */}
-                        <img className = {"mx-1 " + iconstyle} src = {download} alt = "gmail icon"/>
+                        <Image style={{ width: 'auto', height: 'auto' }} className = {"mx-1 " + iconstyle} src = {download} alt = "gmail icon"/>
                         <h3 className="text_italic black mx-1" > Download CV </h3>
                     </a>
                 </div>
