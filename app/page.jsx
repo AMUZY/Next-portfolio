@@ -77,7 +77,7 @@ return (
                       <Image style={{ width: 'auto', height: 'auto' }} data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="400" data-aos-once= {aos_once} className  = {iconstyle + " hidden sm:inline-block"} src={dot} alt = "dot"/>
                   </div>
                   {/* OBJECTIVE */}
-                  <h3 data-aos="fade-up" data-aos-duration={aos_dur} data-aos-delay="450" data-aos-once= {aos_once} className="white text_italic mx-3 my-4">
+                  <h3 data-aos="fade-up" data-aos-duration={aos_dur} data-aos-delay="450" data-aos-once= {aos_once} className="white text_ita mx-3 my-4">
                   I'm Christian, a front-end software engineer with 6 months of experience. I specialize in front end web development, UI/UX design, and graphics design. With proficiency in HTML, CSS, JavaScript, and frameworks like React.js and Next.js, I create visually captivating interfaces that prioritize user experience. Check out my portfolio for examples of my work. Let's discuss how I can contribute to your team or project.
                   </h3>
                   {/* GET IN TOUCH BUTTON */}
