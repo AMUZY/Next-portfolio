@@ -27,11 +27,11 @@ $blue : #1F4EA9;
             transition: .2s ease-out;
             z-index: 2;
         }
-            img{
-                // width : 100%;
-                max-width : max-content;
-                object-fit: cover;
-            }
+        img{
+            // width : 100%;
+            max-width : max-content;
+            object-fit: cover;
+        }
     }
     div:hover{
         div{

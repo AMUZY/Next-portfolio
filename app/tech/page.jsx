@@ -211,40 +211,40 @@ return (
             {/* MY CORE TECH STACK */}
             <h1 className={titlestyle}> My core tech stack </h1>
             {/* TECH STACK */}
-            <div className="w-full flex flex-col flex-wrap justify-center items-start my-1 lg:py-4">
+            <div className="w-full flex flex-col justify-center my-1 lg:py-4">
                 <div className="w-full flex flex-row">
-                    <Image data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1350"  className  = {iconstyle} src={dot} alt = "dot"/>
+                    <Image  className  = {iconstyle} src={dot} alt = "dot"/>
                     <button onClick={()=>{
                     ScrollToTitle("uiux")
-                    }}   data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1300"  className={anchorstyle}>ui/ux design</button>
+                    }}  className={anchorstyle}>ui/ux design</button>
                 </div>
                     
                 <div className="w-full flex flex-row">
-                    <Image data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1450"  className  = {iconstyle} src={dot} alt = "dot"/>
+                    <Image className  = {iconstyle} src={dot} alt = "dot"/>
                     <button onClick={()=>{
                         ScrollToTitle("graphics")
-                    }}  data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1400" data-aos-once= {aos_once} className={anchorstyle}>graphics design</button>
+                    }}  className={anchorstyle}>graphics design</button>
                 </div>
 
                 <div className="w-full flex flex-row">
-                    <Image data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1550"  className  = {iconstyle} src={dot} alt = "dot"/>
+                    <Image  className  = {iconstyle} src={dot} alt = "dot"/>
                     <button onClick={()=>{
                         ScrollToTitle("dgraphics")
-                    }}  data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1500" data-aos-once= {aos_once} className={anchorstyle}>3d graphics design</button>
+                    }} className={anchorstyle}>3d graphics design</button>
                 </div>
                 
                 <div className="w-full flex flex-row">
-                    <Image data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1700" className  = {iconstyle} src={dot} alt = "dot"/>
+                    <Image className  = {iconstyle} src={dot} alt = "dot"/>
                     <button onClick={()=>{
                         ScrollToTitle("animation")
-                    }}  data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1650" className={anchorstyle}>3d animation</button>
+                    }} className={anchorstyle}>3d animation</button>
                 </div>
                
                 <div className="w-full flex flex-row">
-                    <Image data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1800"  className  = {iconstyle} src={dot} alt = "dot"/>
+                    <Image className  = {iconstyle} src={dot} alt = "dot"/>
                     <button onClick={()=>{
                         ScrollToTitle("webdev")
-                    }} data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1750"  className={anchorstyle}>front end web development</button>
+                    }} className={anchorstyle}>front end web development</button>
                 </div>
                
             </div>
