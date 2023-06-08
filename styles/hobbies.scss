@@ -17,13 +17,9 @@ $blue : #1F4EA9;
             height: 100%;
             width : 100%;
             position: relative;
-            span {
-                min-width: 100%;
-                min-height: 100%;
-                img{
-                    min-width : 170%;
-                    object-fit: cover;
-                }
+            img{
+                min-width : 170%;
+                object-fit: cover;
             }
             div{
                 top : 0;
@@ -57,13 +53,9 @@ $blue : #1F4EA9;
     .imgconthobbies {
     div{
         .newdiv {
-            span {
-                min-width: 100%;
-                min-height: 100%;
-                img{
-                    min-width : 170%;
-                    object-fit: cover;
-                    }
+            img{
+                min-width : 170%;
+                object-fit: cover;
                 }
             }
         }
@@ -87,13 +79,9 @@ $blue : #1F4EA9;
             height: 100%;
             width : 100%;
             position: relative;
-            span {
-                min-width: 100%;
-                min-height: 100%;
-                img{
-                    max-width : 120%;
-                    object-fit: cover;
-                }
+            img{
+                max-width : 120%;
+                object-fit: cover;
             }
             div{
                 top : 0;
@@ -125,10 +113,8 @@ $blue : #1F4EA9;
     .imgconthobbies {
     div{
         .newdiv {
-            span {
-                img{
-                    min-width : 100%;
-                    }
+            img{
+                min-width : 100%;
                 }
             }
         }

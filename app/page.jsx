@@ -19,32 +19,33 @@ export var aos_style = "fade-left"
 export var aos_dur = "1200"
 export var aos_once = "false"
 
-export default function Home() {useEffect(()=>{
-  Aos.init();
-  // You can also pass an optional settings object
-  // below listed default settings
-  Aos.init({
-    // Global settings:
-    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-    initClassName: 'aos-init', // class applied after initialization
-    animatedClassName: 'aos-animate', // class applied on animation
-    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-    
+export default function Home() {
+  useEffect(()=>{
+    Aos.init();
+    // You can also pass an optional settings object
+    // below listed default settings
+    Aos.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+      
 
-    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-    offset: 120, // offset (in px) from the original trigger point
-    delay: 0, // values from 0 to 3000, with step 50ms
-    duration: 400, // values from 0 to 3000, with step 50ms
-    easing: 'ease', // default easing for AOS animations
-    once: false, // whether animation should happen only once - while scrolling down
-    mirror: false, // whether elements should animate out while scrolling past them
-    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-  });
+    });
 },[])
 
 let skillstyle = "text underline leading-relaxed white mx-3";
@@ -77,7 +78,7 @@ return (
                   </div>
                   {/* OBJECTIVE */}
                   <h3 data-aos="fade-up" data-aos-duration={aos_dur} data-aos-delay="450" data-aos-once= {aos_once} className="white text_italic mx-3 my-4">
-                  I'm Christian, a front-end software engineer with 6 months of experience. I specialize in front end web development, UI/UX design, and graphics design. With proficiency in HTML, CSS, JavaScript, and frameworks like React.js, I create visually captivating interfaces that prioritize user experience. Check out my portfolio for examples of my work. Let's discuss how I can contribute to your team or project.
+                  I'm Christian, a front-end software engineer with 6 months of experience. I specialize in front end web development, UI/UX design, and graphics design. With proficiency in HTML, CSS, JavaScript, and frameworks like React.js and Next.js, I create visually captivating interfaces that prioritize user experience. Check out my portfolio for examples of my work. Let's discuss how I can contribute to your team or project.
                   </h3>
                   {/* GET IN TOUCH BUTTON */}
                   <a href = {links.cv} target="_blank" rel="noreferrer" data-aos="fade-left" data-aos-duration={aos_dur} data-aos-offset= "50" data-aos-once= "true" data-aos-delay="700" className = "white_col flex flex-row items-center rounded-md mx-3 my-2 lg:my-4 px-3 py-2">

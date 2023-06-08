@@ -1,10 +1,10 @@
 @use "sass:math";
 @use "theme";
 @use "about";
-// @use "allcards";
-// @use "hobbies";
-// @use "other";
-// @use "tech";
+@use "allcards";
+@use "hobbies";
+@use "other";
+@use "tech";
 $size : 3rem;
 $white : #ECEDFF;
 $black : #000000 ;
@@ -157,7 +157,54 @@ html {
     overflow-y: scroll;
 }
 
+@keyframes upndown {
+    0% {
+        scale: 1;
+    }
+    50%{
+        scale: .95;
+    }
+    100%{
+        scale: 1;
+    }
+}
+@keyframes lightup {
+    0%{
+        background-image : radial-gradient(red 0, blue,orange 100%);
+    }
+    50%{
+        background-image : radial-gradient(orange 0, blue,red 100%);
+    }
+    100%{
+        background-image : radial-gradient(red 0, blue,orange 100%);
+    }
+}
 
+#light:hover {
+    background-image: none;
+    animation: lightup 1s ease infinite;
+    // opacity: 50%;
+}
+
+.piccont:hover{
+    // padding : 10px;
+    img{
+        animation: upndown 3s ease-out infinite;
+    }
+}
+.graphics {
+    .picture{
+        background-image: none;
+    }
+    picture:hover{
+        animation: lightup 1s ease infinite;
+        img{
+            animation: upndown 3s ease-out infinite;
+        }
+    }
+}
+
+// FOR THE MENU BUTTON
 @keyframes rotate {
     0% {
         transform: rotateZ(0deg);
