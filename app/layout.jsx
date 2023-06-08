@@ -174,7 +174,7 @@ export default function RootLayout({ children }) {
                     </div>
                 </div>
             </div>
-            <div className="order-2 overflow-y-scroll main_content theme_col flex-grow lg:h-full lg:w-[85%] xl:w-[88%]">
+            <div className="order-2 overflow-y-scroll main_content theme_col flex-grow w-full lg:h-full lg:w-[85%] xl:w-[88%]">
                 {children}
             </div>
         </div>

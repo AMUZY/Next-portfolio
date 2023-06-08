@@ -211,7 +211,7 @@ return (
             {/* MY CORE TECH STACK */}
             <h1 className={titlestyle}> My core tech stack </h1>
             {/* TECH STACK */}
-            <div className="flex flex-col flex-wrap justify-center items-start my-1 lg:my-4">
+            <div className="w-full flex flex-col flex-wrap justify-center items-start my-1 lg:py-4">
                 <div className="w-full flex flex-row">
                     <Image data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1350"  className  = {iconstyle} src={dot} alt = "dot"/>
                     <button onClick={()=>{
