@@ -69,6 +69,10 @@ export default function RootLayout({ children }) {
   }
   return (
     <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <title>Christian - Hi, I'm Christian</title>
+        </head>
       <body>
         <div className="relative overflow-hidden w-full h-full flex flex-col lg:flex-row">
             <div className="order-1 navbar h-auto lg:h-full lg:w-[15%] xl:w-[12%]">
