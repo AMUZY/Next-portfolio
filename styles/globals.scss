@@ -38,6 +38,41 @@ $black : #000000 ;
         }
 }
 
+// TYPINE ANIMATION
+@keyframes typing {
+    0% {
+        width : 100%;
+    }
+    50% {
+        width : 0;
+    }
+}
+
+// @keyframes borderblink {
+//     0%{
+//         border-width: 0 2px 0 0;
+//     }
+//     50%{
+//         border-width: 0;
+//     }
+// }
+
+.typedcont{
+    display: inline-flex;
+    width : max-content;
+    h1{
+        overflow: hidden;
+        white-space: nowrap;
+        width: 0;
+        animation: typing 2s alternate-reverse linear infinite;
+    }
+    span{
+        border-color: #1F4EA9;
+        border-width: 0 5px 0 0;
+        // animation: borderblink .8s forwards linear infinite;
+    }
+}
+
 // FUNCTION TO CONVERT FONT PIXELS TO REMS 
 @function torem ($pixels) {
     $result : (math.div($pixels, 16)*1rem);

@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Aos from 'aos';
 import '@node_modules/aos/dist/aos.css'; // You can also use <link> for styles
 // ..
@@ -51,6 +51,17 @@ export default function Home() {
 let skillstyle = "text underline leading-relaxed white mx-3";
 let iconstyle = "0.02rem"
 
+const [myname,setMyname] = useState('Amu');
+setInterval(() => {
+    if(myname === 'Amu'){
+        setMyname('Christian')
+    }else if(myname === 'Christian'){
+        setMyname('Nnamdi')
+    }else{
+        setMyname('Amu')
+    }
+}, 4000);
+
 return (
   <div className="overflow-hidden w-full h-full flex flex-col md:flex-row pr-3 pl-3 pb-3 lg:p-5">
           {/* CHRISTIAN PICTURE */}
@@ -62,9 +73,13 @@ return (
               {/* INFORMATION */}
               <div className="flex m-4 flex-col items-start">
                   {/* HI I'M CHRISTIAN */}
-                  <h1 data-aos-duration={aos_dur} data-aos={aos_style} data-aos-once= {aos_once} className = "mx-2 my-1 lg:my-4 name_title white">
-                      Hi, I'm Christian.
-                  </h1>
+                  <div data-aos-duration={aos_dur} data-aos={aos_style} data-aos-once= {aos_once} className = "mx-2 my-1 lg:my-4 name_title white">
+                      <h1 className='inline name_title'>Hi, I'm </h1>
+                      <div className='typedcont inline-flex'>
+                        <h1 className='inline name_title'>{`${myname}.`}</h1>
+                        <span></span>
+                        </div>
+                  </div>
                   {/* TECH SKILLS */}
                   <div className="flex flex-row flex-wrap items-center my-1 lg:my-4">
                       <h3 data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="50" data-aos-once= {aos_once} className={skillstyle}>ui/ux designer</h3>

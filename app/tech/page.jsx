@@ -249,6 +249,12 @@ return (
                
             </div>
 
+            {/* TYPING ANIMATION ELEMENT */}
+            {/* <div className='typedcont'>
+                <h2 className='white name_title'> THIS IS A TEST </h2>
+                <span></span>
+            </div> */}
+
             {/* UI/UX DESIGN */}
             <h1 id = "uiux" className={titlestyle}> UI/UX DESIGN </h1>
             {/* UI/UX DETAILS */}
