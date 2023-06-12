@@ -48,15 +48,6 @@ $black : #000000 ;
     }
 }
 
-// @keyframes borderblink {
-//     0%{
-//         border-width: 0 2px 0 0;
-//     }
-//     50%{
-//         border-width: 0;
-//     }
-// }
-
 .typedcont{
     display: inline-flex;
     width : max-content;
@@ -69,7 +60,6 @@ $black : #000000 ;
     span{
         border-color: #1F4EA9;
         border-width: 0 5px 0 0;
-        // animation: borderblink .8s forwards linear infinite;
     }
 }
 

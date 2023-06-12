@@ -52,15 +52,18 @@ let skillstyle = "text underline leading-relaxed white mx-3";
 let iconstyle = "0.02rem"
 
 const [myname,setMyname] = useState('Amu');
-setInterval(() => {
-    if(myname === 'Amu'){
-        setMyname('Christian')
-    }else if(myname === 'Christian'){
-        setMyname('Nnamdi')
-    }else{
-        setMyname('Amu')
-    }
-}, 4000);
+useEffect(()=>{
+    setTimeout(() => {
+        if(myname === 'Amu'){
+            setMyname('Christian')
+        }else if(myname === 'Christian'){
+            setMyname('Nnamdi')
+        }else if(myname === 'Nnamdi'){
+            setMyname('Amu')
+        }
+    }, 4000);
+}, [myname])
+
 
 return (
   <div className="overflow-hidden w-full h-full flex flex-col md:flex-row pr-3 pl-3 pb-3 lg:p-5">
