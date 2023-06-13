@@ -59,7 +59,7 @@ $black : #000000 ;
 
 .runthru{
     // color : transparent;
-    background-image: linear-gradient(to right, $white, #2ecc71, #1F4EA9, $white, $white);
+    background-image: linear-gradient(to right, $black, #2ecc71, #1F4EA9, $black, $black);
     background-size: 600%;
     // -webkit-background-clip: text; 
     animation : colorthru 3s linear infinite;

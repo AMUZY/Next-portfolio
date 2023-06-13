@@ -94,14 +94,12 @@ const webdev = [
 ]
 
 const ui_detail = [
-    {title : "Proficiency", answer : "70%"},
     {title : "From", answer : "20/01/2023"},
     {title : "Softwares", answer : "Figma"},
     {title : "Projects" , answer : "Cookie web design, e-commerce web design"}
 ]
 
 const graphics_detail = [
-    {title : "Proficiency", answer : "80%"},
     {title : "From", answer : "10/08/2022"},
     {title : "Softwares" , answer : "Figma, Blender"},
     {title : "Projects", answer : "voice over flyer, bakery flyer,valentine promo sales, kitchen services, youtube thumbnails, e.t.c."}
@@ -109,7 +107,6 @@ const graphics_detail = [
 
 const threedgraphics_detail = [
     {title : "Brand name", answer : "chris_amunation"},
-    {title : "Proficiency", answer : "90%"},
     {title : "From", answer : "08/01/2020"},
     {title : "Softwares" , answer : "Blender"},
     {title : "Projects", answer : "flyers, MockUps, 3d character design"}
@@ -117,16 +114,14 @@ const threedgraphics_detail = [
 
 const animation_detail = [
     {title : "Brand name", answer : "chris_amunation"},
-    {title : "Proficiency", answer : "90%"},
     {title : "From", answer : "15/02/2020"},
     {title : "Softwares" , answer : "Blender"},
     {title : "Projects", answer : "business ads, NFT animations for whitelist, product animations"}
 ]
 
 const webdev_detail = [
-    {title : "Proficiency", answer : "80%"},
     {title : "From", answer : "22/10/2022"},
-    {title : "Softwares" , answer : "Chrome, Microsoft Edge, visual studio code, React js"},
+    {title : "Softwares" , answer : "Chrome, Microsoft Edge, visual studio code, React js, Next js"},
     {title : "Projects", answer : "Cookie web design, e-commerce, portfolio"}
 ]
 

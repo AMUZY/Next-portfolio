@@ -153,7 +153,7 @@ export default function RootLayout({ children }) {
                                         }} 
                                         className= {
                                             (item.path === path) ?
-                                                "px-5 py-2 my-2 black runthru2 text_semi text-center rounded-tl-full rounded-br-full"
+                                                "px-5 py-2 my-2 white runthru2 text_semi text-center rounded-tl-full rounded-br-full"
                                             :
                                                 "px-5 py-2 my-2 white text text-center rounded-tl-full rounded-br-full hover:bg-gray-400"
                                             
