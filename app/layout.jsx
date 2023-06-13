@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
             <div className="order-1 navbar h-auto lg:h-full lg:w-[15%] xl:w-[12%]">
                 <div className="lg:pt-20 lg:pb-8 lg:pl-2 lg:pl-5 h-full flex flex-col justify-between">
                     {/* MOBILE NAVBAR */}
-                    <div className="px-5 z-[3] py-2 w-full flex flex-row items-center justify-end lg:hidden">
+                    <div className="px-5 z-[3] py-2 w-full bg-thru flex flex-row items-center justify-end lg:hidden">
                         {/* CHRISTIAN */}
                         {/* <h1 className="white name_title"> Christian </h1> */}
                         {/* MENU ICON */}
@@ -111,7 +111,7 @@ export default function RootLayout({ children }) {
                                         <Link key = {uuidv4()} 
                                         className= {
                                             (item.path === path) ?
-                                                "px-5 py-2 my-2 theme_col white text_semi rounded-l-full"
+                                                "px-5 py-2 my-2 theme_col runthru white text_semi rounded-l-full"
                                             :
                                                 "px-5 py-2 my-2 white_col black text rounded-l-full hover:bg-gray-400"
                                         }
@@ -153,7 +153,7 @@ export default function RootLayout({ children }) {
                                         }} 
                                         className= {
                                             (item.path === path) ?
-                                                "px-5 py-2 my-2 white_col black text_semi text-center rounded-tl-full rounded-br-full"
+                                                "px-5 py-2 my-2 black runthru2 text_semi text-center rounded-tl-full rounded-br-full"
                                             :
                                                 "px-5 py-2 my-2 white text text-center rounded-tl-full rounded-br-full hover:bg-gray-400"
                                             
@@ -178,7 +178,7 @@ export default function RootLayout({ children }) {
                     </div>
                 </div>
             </div>
-            <div className="order-2 overflow-y-scroll main_content theme_col flex-grow w-full lg:h-full lg:w-[85%] xl:w-[88%]">
+            <div className="order-2 overflow-y-scroll main_content bg-thru flex-grow w-full lg:h-full lg:w-[85%] xl:w-[88%]">
                 {children}
             </div>
         </div>

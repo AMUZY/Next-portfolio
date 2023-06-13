@@ -14,12 +14,18 @@ $black : #000000 ;
 @tailwind components;
 @tailwind utilities;
 
-// SCROLL BAR STYLES
 ::-webkit-scrollbar {
-    width: 5px;
+    display : none;
     }
 
-::-webkit-scrollbar-track {
+@media only screen and (min-width : 1200px) {
+    // SCROLL BAR STYLES
+    ::-webkit-scrollbar {
+        display: inline;
+        width: 10px;
+        }
+
+    ::-webkit-scrollbar-track {
     background: $black;
     }
     
@@ -31,11 +37,6 @@ $black : #000000 ;
     ::-webkit-scrollbar-thumb:hover {
     background: #83ADFF;
     }
-
-@media only screen and (min-width : 480px) {
-    ::-webkit-scrollbar {
-        width: 10px;
-        }
 }
 
 // TYPINE ANIMATION
@@ -46,6 +47,38 @@ $black : #000000 ;
     50% {
         width : 0;
     }
+}
+
+@keyframes colorthru{
+    0%{
+        background-position: 100% -20%;
+    }100%{
+        background-position: -20% 100%;
+    }
+}
+
+.runthru{
+    // color : transparent;
+    background-image: linear-gradient(to right, $white, #2ecc71, #1F4EA9, $white, $white);
+    background-size: 600%;
+    // -webkit-background-clip: text; 
+    animation : colorthru 3s linear infinite;
+}
+
+.runthru2{
+    // color : transparent;
+    background-image: linear-gradient(to right, $black, #2ecc71, #1F4EA9, $black, $black);
+    background-size: 600%;
+    // -webkit-background-clip: text; 
+    animation : colorthru 3s linear .78s infinite;
+}
+
+.bg-thru{
+    // color : transparent;
+    background-image: linear-gradient(to right, $black, #2ecc71, #1F4EA9, $black, $black);
+    background-size: 500%;
+    // -webkit-background-clip: text; 
+    animation : colorthru 3s linear .78s infinite;
 }
 
 .typedcont{
@@ -192,23 +225,6 @@ html {
     100%{
         scale: 1;
     }
-}
-@keyframes lightup {
-    0%{
-        background-image : radial-gradient(red 0, blue,orange 100%);
-    }
-    50%{
-        background-image : radial-gradient(orange 0, blue,red 100%);
-    }
-    100%{
-        background-image : radial-gradient(red 0, blue,orange 100%);
-    }
-}
-
-#light:hover {
-    background-image: none;
-    animation: lightup 1s ease infinite;
-    // opacity: 50%;
 }
 
 .piccont:hover{
