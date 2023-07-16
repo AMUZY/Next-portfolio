@@ -72,7 +72,7 @@ return (
               <Image src = {christian} style={{ width: 'auto', height: 'auto' }} className="mx-auto rounded-xl xl:rounded-3xl" alt = "christian"/>
           </div>
           {/* MAIN INFORMATION */}
-          <div className="card_col mt-3 w-full min-h-1/2 md:h-auto flex justify-start items-center rounded-xl md:mt-0 lg:w-1/2 md:ml-[20px] xl:rounded-3xl">
+          <div className="card_col flex-grow mt-3 w-full min-h-1/2 md:h-auto flex justify-start items-center rounded-xl md:mt-0 lg:w-1/2 md:ml-[20px] xl:rounded-3xl">
               {/* INFORMATION */}
               <div className="flex m-4 flex-col items-start">
                   {/* HI I'M CHRISTIAN */}
