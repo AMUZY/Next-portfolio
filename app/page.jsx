@@ -102,7 +102,7 @@ return (
                   <a href = {links.cv} target="_blank" rel="noreferrer" data-aos="fade-left" data-aos-duration={aos_dur} data-aos-offset= "50" data-aos-once= "true" data-aos-delay="700" className = "white_col flex flex-row items-center rounded-md mx-3 my-2 lg:my-4 px-3 py-2">
                       {/* MAIN ICON */}
                       <Image style={{ width: 'auto', height: 'auto' }} className = {"mx-1 " + iconstyle} src = {download} alt = "gmail icon"/>
-                      <h3 className="text_ita black mx-1" > Download CV </h3>
+                      <h3 className="text_ita black mx-1" > Download Resume </h3>
                   </a>
               </div>
           </div>
