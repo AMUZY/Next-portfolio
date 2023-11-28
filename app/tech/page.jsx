@@ -204,11 +204,23 @@ return (
                     <Image data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1300" className  = {iconstyle} src={check} alt = "check"/>
                     <h3 data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1350" data-aos-once= {aos_once} className={skillstyle}>NEXT JS</h3>
                 </div>
+                <div className={skilldiv}>
+                    <Image data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1400" className  = {iconstyle} src={check} alt = "check"/>
+                    <h3 data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1400" data-aos-once= {aos_once} className={skillstyle}>OPEN SOURCE SOFTWARES</h3>
+                </div>
             </div>
             {/* MY CORE TECH STACK */}
             <h1 className={titlestyle}> My core tech stack </h1>
             {/* TECH STACK */}
             <div className="w-full flex flex-col justify-center my-1 lg:py-4">
+                
+                <div className="w-full flex flex-row">
+                    <Image className  = {iconstyle} src={dot} alt = "dot"/>
+                    <button onClick={()=>{
+                        ScrollToTitle("webdev")
+                    }} className={anchorstyle}>{`front end web development(main)`}</button>
+                </div>
+
                 <div className="w-full flex flex-row">
                     <Image  className  = {iconstyle} src={dot} alt = "dot"/>
                     <button onClick={()=>{
@@ -237,20 +249,33 @@ return (
                     }} className={anchorstyle}>3d animation</button>
                 </div>
                
-                <div className="w-full flex flex-row">
-                    <Image className  = {iconstyle} src={dot} alt = "dot"/>
-                    <button onClick={()=>{
-                        ScrollToTitle("webdev")
-                    }} className={anchorstyle}>front end web development</button>
-                </div>
-               
             </div>
-
-            {/* TYPING ANIMATION ELEMENT */}
-            {/* <div className='typedcont'>
-                <h2 className='white name_title'> THIS IS A TEST </h2>
-                <span></span>
-            </div> */}
+            
+            {/* WEB DEVELOPMENT */}
+            <h1 id = "webdev" className={titlestyle}> FRONT END WEB DEVELOPMENT </h1>
+            {/* UWEB DEVELOPMENT */}
+            <div className="card_col rounded-xl xl:rounded-3xl my-4 py-4 px-2 flex flex-col">
+                {/* DETAILS DIV */}
+                <div className="flex flex-row flex-wrap justify-between">
+                    {
+                        webdev_detail.map((item)=>{
+                            return(
+                                <Detail key = {uuidv4()} title = {item.title} answer = {item.answer} />
+                            )
+                        })
+                    }
+                </div>
+                {/* WEB DEV CARD DIV */}
+                <div className="flex flex-row flex-wrap justify-between">
+                    {
+                        webdev.map((item)=>{
+                            return (
+                                <WEBCard key = {uuidv4()} image = {item.image} title = {item.title} desc = {item.desc} github = {item.github} icon = {item.icon} weblink = {item.weblink} alt = {item.alt} />
+                            )
+                        })
+                    }
+                </div>
+            </div>
 
             {/* UI/UX DESIGN */}
             <h1 id = "uiux" className={titlestyle}> UI/UX DESIGN </h1>
@@ -352,33 +377,6 @@ return (
                 </div>
                 {/* BUTTON */}
                 <TechBtn2 link = {links.ig} icon = {ig} icon2 = {arrow} text = "View on IG" alt = "download icon" alt2 = "download icon"/>
-            </div>
-
-            
-            {/* WEB DEVELOPMENT */}
-            <h1 id = "webdev" className={titlestyle}> FRONT END WEB DEVELOPMENT </h1>
-            {/* UWEB DEVELOPMENT */}
-            <div className="card_col rounded-xl xl:rounded-3xl my-4 py-4 px-2 flex flex-col">
-                {/* DETAILS DIV */}
-                <div className="flex flex-row flex-wrap justify-between">
-                    {
-                        webdev_detail.map((item)=>{
-                            return(
-                                <Detail key = {uuidv4()} title = {item.title} answer = {item.answer} />
-                            )
-                        })
-                    }
-                </div>
-                {/* WEB DEV CARD DIV */}
-                <div className="flex flex-row flex-wrap justify-between">
-                    {
-                        webdev.map((item)=>{
-                            return (
-                                <WEBCard key = {uuidv4()} image = {item.image} title = {item.title} desc = {item.desc} github = {item.github} icon = {item.icon} weblink = {item.weblink} alt = {item.alt} />
-                            )
-                        })
-                    }
-                </div>
             </div>
 
             {/* GO BACK TO TOP */}

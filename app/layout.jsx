@@ -49,7 +49,6 @@ export default function RootLayout({ children }) {
   const nav = [
       {name : "About", path : "/"},
       {name : "Tech Skills", path : "/tech"},
-      {name : "Other Skills", path : "/other"},
       {name : "Hobbies", path : "/hobbies"}
   ]
 
