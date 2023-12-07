@@ -207,6 +207,10 @@ return (
                     <Image data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1600" className  = {iconstyle} src={check} alt = "check"/>
                     <h3 data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1500" data-aos-once= {aos_once} className={skillstyle}>JEST TESTING FRAMEWORK</h3>
                 </div>
+                <div className={skilldiv}>
+                    <Image data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1700" className  = {iconstyle} src={check} alt = "check"/>
+                    <h3 data-aos-duration={aos_dur} data-aos={aos_style} data-aos-delay="1550" data-aos-once= {aos_once} className={skillstyle}>REG EXP</h3>
+                </div>
             </div>
             {/* MY CORE TECH STACK */}
             <h1 className={titlestyle}> My core tech stack </h1>
